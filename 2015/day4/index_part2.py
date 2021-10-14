@@ -1,8 +1,9 @@
 data = open('input.txt', 'r').read().split('\n')
-import hashlib
 
 data = data[0]
 print(data)
+
+import hashlib
 
 pointer = 0
 perfect_present = hashlib.md5(bytes(f"{data}{pointer}", 'utf-8'))
